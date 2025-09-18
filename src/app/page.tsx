@@ -40,25 +40,15 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="about">
-        <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About</h2>
-        </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.summary}
-          </Markdown>
-        </BlurFade>
-      </section>
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+          <BlurFade delay={BLUR_FADE_DELAY * 3}>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
           {DATA.education.map((education, id) => (
             <BlurFade
               key={education.school}
-              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+              delay={BLUR_FADE_DELAY * 4 + id * 0.05}
             >
               <ResumeCard
                 key={education.school}
@@ -75,13 +65,13 @@ export default function Page() {
       </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+          <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Experience</h2>
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
               key={work.company}
-              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
             >
               <ResumeCard
                 key={work.company}
@@ -100,7 +90,7 @@ export default function Page() {
       </section>
       <section id="Stack">
         <div className="flex min-h-0 flex-col gap-y-6">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <div className="space-y-2">
               <h2 className="text-xl font-bold">My Stacks (Engineering + AI + Product)</h2>
               <p className="text-sm text-muted-foreground">
@@ -108,7 +98,7 @@ export default function Page() {
               </p>
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 10}>
+          <BlurFade delay={BLUR_FADE_DELAY * 8}>
             <div className="space-y-4">
               <LogoLoop
                 logos={[
@@ -180,14 +170,14 @@ export default function Page() {
       {(DATA as any).projects && (DATA as any).projects.length > 0 && (
         <section id="projects">
           <div className="space-y-12 w-full py-12">
-            <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <BlurFade delay={BLUR_FADE_DELAY * 9}>
               <h2 className="text-xl font-bold">Project Stories</h2>
             </BlurFade>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
               {(DATA as any).projects.map((project: any, id: number) => (
                 <BlurFade
                   key={project.title}
-                  delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                  delay={BLUR_FADE_DELAY * 10 + id * 0.05}
                 >
                   <ProjectCard
                     href={project.href}
@@ -251,7 +241,7 @@ export default function Page() {
       </section> */}
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <h2 className="text-xl font-bold">Get in Touch</h2>
             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Want to chat? Just shoot me a dm{" "}
