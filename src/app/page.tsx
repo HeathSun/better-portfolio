@@ -105,7 +105,7 @@ export default function Page() {
                   { src: "/react.png", alt: "React", href: "https://reactjs.org" },
                   { src: "/nextjs.png", alt: "Next.js", href: "https://nextjs.org" },
                   { src: "/typescript.png", alt: "TypeScript", href: "https://www.typescriptlang.org" },
-                  { src: "/postgresql.svg", alt: "PostgreSQL", href: "https://www.postgresql.org" },
+                  { src: "/Postgresql.png", alt: "PostgreSQL", href: "https://www.postgresql.org" },
                   { src: "/docker.png", alt: "Docker", href: "https://www.docker.com" },
                   { src: "/redis.svg", alt: "Redis", href: "https://redis.io" },
                   { src: "/supabase.png", alt: "Supabase", href: "https://supabase.com" },
