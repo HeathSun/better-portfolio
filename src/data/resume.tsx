@@ -144,7 +144,7 @@ export const DATA = {
       school: "ZhenFund",
       href: "https://en.zhenfund.com/",
       degree: "Startup Residency Fellow (ZR13)",
-      logoUrl: "/zhenfund.png",
+      logoUrl: "/ZhenFund.png",
       start: "2023",
       end: "2023",
     },
