@@ -8,8 +8,8 @@ export const DATA = {
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "I compose reality with thinking machines.",
-  avatarUrl: "/white-avatar.png",
+    "I'm trying to build the next big thing.",
+  avatarUrl: "/channels_profile.jpg",
   Stack: [
     "Python",
     "React",
@@ -92,7 +92,7 @@ export const DATA = {
       start: "Apr 2023",
       end: "Sept 2024",
       description:
-        "Led the development of one of the world's first AI-native Tarot reading apps, securing a $60K Li Dak Sum Fellowship and first place in the NAA Start-up Competition. Selected by China's premier angel investor, ZhenFund, as 2023 ZhenResidence Fellow (25 start-ups per year), becoming the youngest ZhenResidence member in its history at age 19. Pivoted (in 2024) to delivering AI agent systems, with clients from China, Japan, and the US West Coast, to drive Gen-AI transformation. Analyzed the Barnum effect in divination via word embedding clustering and created multi-agent bots with retrieval-augmented generation.",
+        "Led the development of one of the world's first AI-native Tarot reading apps, securing a $60K Li Dak Sum Fellowship and first place in the NAA Start-up Competition. Selected by China's premier angel investor, ZhenFund, as 2023 ZhenResidence Fellow (25 start-ups per year), becoming the youngest ZhenResidence member in its history at age 19. Pivoted (in 2024) to delivering AI agent systems, with clients from China, Japan, and the US West Coast, to drive Gen-AI transformation.",
     },
     {
       company: "Aihuashen Technology × China Mobile",
@@ -119,7 +119,7 @@ export const DATA = {
         "Using simulated annealing to model the spatial heterogeneity of light intensity for composite elastomer micro-needle arrays, enabling the adaptive customization based on the 3D shape of the wound for cell behavior controllers. Completed all programming aspects of the multi-luminescence optogenetic platform for wound-healing.",
     },
     {
-      company: "University of Science and Technology of China",
+      company: "USTC China",
       href: "https://www.ustc.edu.cn",
       badges: [],
       location: "Hefei, China/Hybrid",
@@ -134,8 +134,8 @@ export const DATA = {
   education: [
     {
       school: "Carnegie Mellon University",
-      href: "https://www.cmu.edu/iii/graduate-programs/mssm/index.html",
-      degree: "M.S. Software Management",
+      href: "https://www.cmu.edu/",
+      degree: "M.S. Software Management & Computer Engineering",
       logoUrl: "/cmu.png",
       start: "2025",
       end: "2026",
@@ -165,41 +165,31 @@ export const DATA = {
       end: "2022",
     },
   ],
-  // projects: [
-  //   {
-  //     title: "llm.report",
-  //     href: "https://llm.report",
-  //     dates: "April 2023 - September 2023",
-  //     active: true,
-  //     description:
-  //       "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-  //     technologies: [
-  //       "Next.js",
-  //       "Typescript",
-  //       "PostgreSQL",
-  //       "Prisma",
-  //       "TailwindCSS",
-  //       "Shadcn UI",
-  //       "Magic UI",
-  //       "Stripe",
-  //       "Cloudflare Workers",
-  //     ],
-  //     links: [
-  //       {
-  //         type: "Website",
-  //         href: "https://llm.report",
-  //         icon: <Icons.globe className="size-3" />,
-  //       },
-  //       {
-  //         type: "Source",
-  //         href: "https://github.com/dillionverma/llm.report",
-  //         icon: <Icons.github className="size-3" />,
-  //       },
-  //     ],
-  //     image: "",
-  //     video: "https://cdn.llm.report/openai-demo.mp4",
-  //   },
-  // ],
+  projects: [
+    {
+      title: "Mysticism in the Age of AI",
+      href: "/blog/mysticism",
+      dates: "August 2022",
+      active: true,
+      description:
+        "Quantified tarot systems by measuring the Barnum effect across the Rider-Waite and Thoth decks using modern NLP tooling.",
+      technologies: [
+        "Python",
+        "NLP",
+        "Embeddings",
+        "t-SNE",
+        "Pandas",
+      ],
+      links: [
+        {
+          type: "Read report",
+          href: "/blog/mysticism",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/TarotCards.gif",
+    },
+  ],
   hackathons: [
     {
       title: "Hack Western 5",

@@ -71,7 +71,7 @@
       @apply border-border;
     }
     body {
-      @apply bg-background text-foreground;
+      @apply bg-background text-foreground font-text;
     }
   }
 
@@ -80,7 +80,7 @@
   }
   
   pre {
-    @apply !px-0 rounded-lg overflow-x-auto py-4
+    @apply !px-0 rounded-lg overflow-x-auto py-4 font-mono;
   }
    
   pre [data-line] {
@@ -88,7 +88,7 @@
   }
 
   code {
-    @apply text-sm md:text-base !leading-loose;
+    @apply text-sm md:text-base !leading-loose font-mono;
   }
   
   pre > code {
@@ -100,14 +100,30 @@
     color: var(--shiki-light);
     background-color: var(--shiki-light-bg);
   }
-   
-  @media (prefers-color-scheme: dark) {
-    code[data-theme*=" "],
-    code[data-theme*=" "] span {
-      color: var(--shiki-dark);
-      background-color: var(--shiki-dark-bg);
-    }
-  }
+
+.dark code[data-theme*=" "],
+.dark code[data-theme*=" "] span {
+  color: #ffffff;
+  background-color: var(--shiki-dark-bg);
+}
+
+.dark .prose pre[data-theme*="min-dark"] code,
+.dark .prose pre[data-theme*="min-dark"] code span,
+.dark .prose pre[data-theme*="min-dark"] [data-line] span,
+.dark .prose code[data-theme*="min-dark"] span {
+  color: #ffffff !important;
+}
+
+.dark .prose pre[data-theme*="min-dark"] {
+  background-color: transparent;
+}
+
+:where(html):not(.dark) .prose pre[data-theme*="min-light"] code,
+:where(html):not(.dark) .prose pre[data-theme*="min-light"] code span,
+:where(html):not(.dark) .prose pre[data-theme*="min-light"] [data-line] span,
+:where(html):not(.dark) .prose code[data-theme*="min-light"] span {
+  color: #d1d5db !important;
+}
   
   code[data-line-numbers] {
     counter-reset: line;
@@ -133,6 +149,11 @@
   margin-right: 2rem;
   text-align: right;
   color: gray;
+}
+
+.dark .prose code[data-line-numbers] > [data-line]::before,
+.dark .prose code > [data-line]::before {
+  color: #ffffff;
 }
  
 code[data-line-numbers-max-digits="2"] > [data-line]::before {

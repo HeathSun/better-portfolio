@@ -239,7 +239,7 @@ export default function Page() {
           </BlurFade>
         </div>
       </section> */}
-      <section id="contact">
+      {/* <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <h2 className="text-xl font-bold">Get in Touch</h2>
@@ -256,7 +256,7 @@ export default function Page() {
             </p>
           </BlurFade>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

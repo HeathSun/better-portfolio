@@ -3,9 +3,17 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
+import localFont from "next/font/local";
 import type { Metadata } from "next";
 import { IBM_Plex_Mono as FontMono, Playfair_Display as FontSerif } from "next/font/google";
+import "katex/dist/katex.min.css";
 import "./globals.css";
+
+const fontText = localFont({
+  src: "../../public/Switzer-Variable.ttf",
+  variable: "--font-text",
+  display: "swap",
+});
 
 const fontMono = FontMono({
   subsets: ["latin"],
@@ -66,6 +74,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-mono antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
+          fontText.variable,
           fontMono.variable,
           fontSerif.variable
         )}

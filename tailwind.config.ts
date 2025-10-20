@@ -20,8 +20,9 @@ const config = {
     },
     extend: {
       fontFamily: {
+        text: ["var(--font-text)", "sans-serif"],
         mono: ["var(--font-mono)", ...fontFamily.mono],
-        sans: ["var(--font-mono)", ...fontFamily.mono],
+        sans: ["var(--font-text)", ...fontFamily.sans],
         serif: ["var(--font-serif)", ...fontFamily.serif],
       },
       colors: {
