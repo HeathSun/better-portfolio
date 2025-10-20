@@ -73,6 +73,10 @@
     body {
       @apply bg-background text-foreground font-text;
     }
+    h1,
+    .font-headline {
+      font-family: var(--font-headline);
+    }
   }
 
   h3 code {

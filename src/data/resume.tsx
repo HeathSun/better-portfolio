@@ -8,7 +8,7 @@ export const DATA = {
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "I'm trying to build the next big thing.",
+    "🌎 Mountain View, CA \n💻 Building the next big thing.",
   avatarUrl: "/channels_profile.jpg",
   Stack: [
     "Python",
@@ -85,7 +85,7 @@ export const DATA = {
     {
       company: "FateAlgo Ltd",
       href: "#",
-      badges: ["ZhenFund '23 Fellow"],
+      badges: [],
       location: "London, UK/Hybrid",
       title: "Founder/CEO · Generative AI Application",
       logoUrl: "/fatealgo.jpeg",

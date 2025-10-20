@@ -15,6 +15,12 @@ const fontText = localFont({
   display: "swap",
 });
 
+const fontHeadline = localFont({
+  src: "../../public/romanabt_roman.otf",
+  variable: "--font-headline",
+  display: "swap",
+});
+
 const fontMono = FontMono({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -62,6 +68,9 @@ export const metadata: Metadata = {
     google: "",
     yandex: "",
   },
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -75,6 +84,7 @@ export default function RootLayout({
         className={cn(
           "min-h-screen bg-background font-mono antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
           fontText.variable,
+          fontHeadline.variable,
           fontMono.variable,
           fontSerif.variable
         )}

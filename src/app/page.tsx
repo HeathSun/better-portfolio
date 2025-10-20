@@ -21,12 +21,12 @@ export default function Page() {
             <div className="flex-col flex flex-1 space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-serif italic"
+                className="text-3xl tracking-tighter sm:text-5xl xl:text-6xl/none font-headline"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                text={`Hi, I'm ${DATA.name} 🐦`}
               />
               <BlurFadeText
-                className="max-w-[600px] text-sm md:text-base"
+                className="max-w-[600px] text-sm md:text-base whitespace-pre-line"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
@@ -171,7 +171,7 @@ export default function Page() {
         <section id="projects">
           <div className="space-y-12 w-full py-12">
             <BlurFade delay={BLUR_FADE_DELAY * 9}>
-              <h2 className="text-xl font-bold">Project Stories</h2>
+              <h2 className="text-xl font-bold">Projects</h2>
             </BlurFade>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
               {(DATA as any).projects.map((project: any, id: number) => (
@@ -204,7 +204,7 @@ export default function Page() {
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                   Hackathons
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-mono">
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
