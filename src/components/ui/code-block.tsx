@@ -120,7 +120,7 @@ export const CodeBlock = ({
   children = []
 }: CodeBlockProps) => {
   const [animation, setAnimation] = useState<boolean>(false);
-  const animationTimeout = useRef<NodeJS.Timeout>(null);
+  const animationTimeout = useRef<NodeJS.Timeout | null>(null);
 
   const onClick = () => {
     if (animationTimeout.current) {
