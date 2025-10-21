@@ -148,7 +148,7 @@ export const CodeBlock = ({
                 onChange={(e) => switcher?.onChange && switcher.onChange(e.target.value)}
               />
             )}
-            <Button svgOnly type="tertiary" size="small" onClick={onClick}>
+            <Button variant="ghost" size="sm" onClick={onClick}>
               <div className="h-4 w-4">
                 <svg
                   height="16"
