@@ -8,7 +8,7 @@ export const DATA = {
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "🌎 Mountain View, CA \n💻 Building the next big thing.",
+    "Mountain View, CA \nBuilding the next big thing.",
   avatarUrl: "/channels_profile.jpg",
   Stack: [
     "Python",
@@ -75,7 +75,7 @@ export const DATA = {
       href: "https://tas.ac.uk",
       badges: [],
       location: "Nottingham, UK",
-      title: "Developer · Multimodal AI · VR/MR",
+      title: "Developer · Multimodal AI",
       logoUrl: "/TAS.png",
       start: "Oct 2024",
       end: "Jan 2025",
@@ -111,7 +111,7 @@ export const DATA = {
       href: "https://www.zju.edu.cn",
       badges: [],
       location: "Hangzhou, China/Hybrid",
-      title: "Co-Researcher · Biological Engineering · AI for Science",
+      title: "Co-Researcher · AI4Science (Bioengineering)",
       logoUrl: "/zju.png",
       start: "Oct 2023",
       end: "Mar 2024",
@@ -138,7 +138,7 @@ export const DATA = {
       degree: "M.S. Software Management & Computer Engineering",
       logoUrl: "/cmu.png",
       start: "2025",
-      end: "2026",
+      end: "Present",
     },
     {
       school: "ZhenFund",
@@ -167,6 +167,34 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "One Click to Grade Them All",
+      href: "/blog/1CGA",
+      dates: "June 2025",
+      active: true,
+      description:
+        "One click to grade them all, One tool-call to find them. A rubric-customizable STEM paper grading agent is the mark of a truly creative TA.",
+      technologies: [
+        "Next.js",
+        "React",
+        "Gemini 2.5 Pro",
+        "AI SDK",
+        "Cloudflare R2",
+      ],
+      links: [
+        {
+          type: "Demo",
+          href: "https://www.youtube.com/watch?v=1NKYhTdQDvA",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "Details",
+          href: "/blog/1CGA",
+          icon: <Icons.fileText className="size-3" />,
+        },
+      ],
+      image: "/1CGA-Cover.gif",
+    },
+    {
       title: "Mysticism in the Age of AI",
       href: "/blog/mysticism",
       dates: "August 2022",
@@ -182,9 +210,9 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Read report",
+          type: "Details",
           href: "/blog/mysticism",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.fileText className="size-3" />,
         },
       ],
       image: "/TarotCards.gif",

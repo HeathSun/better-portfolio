@@ -23,7 +23,7 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl tracking-tighter sm:text-5xl xl:text-6xl/none font-headline"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name} 🐦`}
+                text={`Hi, I'm ${DATA.name} 👋`}
               />
               <BlurFadeText
                 className="max-w-[600px] text-sm md:text-base whitespace-pre-line"

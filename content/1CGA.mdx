@@ -1,0 +1,58 @@
+---
+title: "One Click to Grade Them All (1CGA)"
+publishedAt: "2025-06-27"
+summary: "An AI-powered grading system built for precision, speed, and insight. From rubric design to AI-powered feedback, every step is engineered to save time and enhance academic rigor."
+---
+
+<div class="mb-10 p-6 px-8 border border-l-4 border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900/50 rounded-lg" style="transition: all 0.3s ease;" onmouseover="this.style.boxShadow = document.documentElement.classList.contains('dark') ? '8px 8px 0px 0px rgba(255,255,255,0.1)' : '8px 8px 0px 0px rgba(0,0,0,0.15)'" onmouseout="this.style.boxShadow='none'">
+  <p class="text-xl md:text-2xl text-neutral-700 dark:text-neutral-300 leading-relaxed" style="font-family: var(--font-headline);">
+    "One click to grade them all, One tool-call to find them, One agent to bring them all and in the darkness refine them."
+  </p>
+</div>
+
+<div class="mb-8">
+  <h3 class="font-mono text-base font-semibold mb-3 text-neutral-700 dark:text-neutral-300">Demo Video</h3>
+  <div class="relative w-full rounded-lg overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+    <iframe 
+      class="absolute top-0 left-0 w-full h-full"
+      src="https://www.youtube-nocookie.com/embed/1NKYhTdQDvA?rel=0&modestbranding=1&showinfo=0&controls=1&iv_load_policy=3&disablekb=0&fs=1" 
+      title="1CGA Demo Video" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<h3 class="font-mono text-lg font-semibold mt-8 mb-4">Homepage and Overview</h3>
+
+Right here on the homepage, you'll see the bold tagline — it captures exactly what this tool is built for: large-context comprehension, rubric-based evaluation, and seamless multimodal analysis. Scroll down and you'll spot 1CGA's four key features: AI-powered grading, custom rubrics, batch processing, and interactive feedback. Let's take a closer look at how it all works. Click the Get Started button in the center to jump into your dashboard. You'll need a Gemini 2.5 Pro API key, which you can get from Google AI Studio. Just copy and paste your API key into the field here — don't worry, it's stored securely in your browser.
+
+<h3 class="font-mono text-lg font-semibold mt-8 mb-4">Dashboard and Setup</h3>
+
+Below that, you'll see an option to fill out a system prompt. This helps customize the AI's grading behavior — for example, how strict or lenient it should be and which areas to focus on. For this demo, we'll stick with the default settings. At the bottom of the dashboard, there's also a simplified workflow guide to help you follow the process step by step. Next to it, you'll find Recent History, where your past grading sessions will appear. Since we haven't graded anything yet, it's currently empty.
+
+<h3 class="font-mono text-lg font-semibold mt-8 mb-4">Building a Rubric</h3>
+
+Now, let's build your first rubric. Head to the Rubric section and start by giving your rubric a name. Then define your grading criteria — such as content, structure, analysis, and references — and assign weights to each one. Just make sure they add up to 100%. Want more detailed evaluation? Switch to Additional Metrics, and you can define things like confidence score and relevance score. These metrics give you a richer picture of each submission. Finally, upload the assignment PDF if you have one, and hit Save.
+
+<h3 class="font-mono text-lg font-semibold mt-8 mb-4">Uploading and Grading Papers</h3>
+
+Now it's time to grade some papers. You can upload up to 10 papers at once, or if you're using cloud storage, access files directly from your Cloudflare R2 bucket. Enter your R2 bucket name, access key ID, and secret access key, then click Connect to R2. Once connected, you're ready to pull papers in. The AI gets to work grading each paper based on the rubric you created. When grading is done, you'll see a full results dashboard with summary stats like average score and review rating, plus a detailed breakdown for each paper — including scores, review level, confidence, relevance, and rubric criteria such as content and structure. Need to work offline? Just export to CSV. Want deeper insights? Use the AI chat to ask why a paper got its score or how it could improve.
+
+<h3 class="font-mono text-lg font-semibold mt-8 mb-4">Documentation, FAQ, and System Logic</h3>
+
+Need help? The Documentation tab walks you through everything — from setting up your API key and creating rubrics to uploading papers, reviewing scores, and chatting with the AI. Clear steps, powerful grading, all in one place. Got questions? The FAQ section has quick answers to common issues and a search bar to find exactly what you need — fast help, zero friction.
+
+In the backend, 1CGA operates under a set of precise, structured system prompts. The AI acts as a professor and expert reviewer, scoring each of 10 rubric items from 0 to 5. For each, it provides three brief comments and a detailed justification grounded directly in the paper. Results are returned in a consistent JSON format for easy analysis. Beyond visible grading, 1CGA tracks hidden metrics for deep academic insight — such as clarity, modeling motivation, assumption validity, and even literary appeal. It extracts figure, table, equation, and reference counts, along with detected methods and models, enabling nuanced analysis and benchmarking.
+
+<h3 class="font-mono text-lg font-semibold mt-8 mb-4">Technical Edge</h3>
+
+1CGA uses a rubric-oriented thinking loop, iteratively reading, reasoning, and re-evaluating across all criteria. Each score emerges from multipass analysis, ensuring thoughtful alignment with your custom rubric — not just shallow keyword matching. 1CGA's evaluations are remarkably human-like. It not only pinpoints relevant sections for deep reading but also interprets figures and tables, integrating multimodal content into its grading just like a teaching assistant. Every reference is followed, read, and assessed for compliance and relevance.
+
+Academic graphs, charts, formulas, tables, and references challenge most AI grading systems — but 1CGA sets a new standard, grading 200 pages in just 3.4 minutes with an average 0.873 correlation to real human scores as validated on MCM/ICM papers. That's faster and more accurate in grading highly STEM-focused work than StarGrader, Co-Grader, AutoMark, and others. Featuring React with Tailwind UI, Lucide icons, and seamless component design, the system balances performance and scalability with clean user interaction — from rubric input to final evaluation. Built on a modern full-stack architecture, 1CGA integrates over 30 active files and 10,000+ lines of original code, 2,000 of which form the intelligent grading core.
+
+<h3 class="font-mono text-lg font-semibold mt-8 mb-4">Final Message</h3>
+
+1CGA isn't just another grading tool — it's your autonomous academic assistant built for precision, speed, and insight. From rubric design to AI-powered feedback, every step is engineered to save time and enhance academic rigor. Ready to revolutionize your grading workflow? Try 1CGA — click once and let it do the rest.
+
